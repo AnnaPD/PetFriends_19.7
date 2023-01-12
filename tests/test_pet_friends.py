@@ -44,7 +44,7 @@ def test_get_all_pets_with_valid_key(filter='my_pets'):
 # TC-PF-4
 def test_add_new_pet_with_valid_data(name='(/\*+)', animal_type='__--__',
                                      age='?', pet_photo='images/Dog.jpg'):
-    """Проверяем, что можно добавить питомца с не корректными данными (в виде символов)"""
+    """Проверяем, что невозможно добавить питомца с не корректными данными (в виде символов)"""
 
     # Получаем полный путь изображения питомца и сохраняем в переменную pet_photo
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
